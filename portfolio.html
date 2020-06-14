@@ -307,7 +307,6 @@
       </section>
     </main>
 
-    <!--футер-->
     <footer class="footer-section section">
       <div class="footer-container container">
         <div class="footer-contacts">
@@ -381,17 +380,26 @@
             </li>
           </ul>
         </div>
-        <div class="subscribe">
+
+        <form class="subscribe">
           <b class="subscribe-title upper">
             Подпишитесь на рассылку
           </b>
-          <button type="button" class="centered">
+          <label>
+            <input
+              type="email"
+              name="mail"
+              class="footer__input"
+              placeholder="E-mail"
+            />
+          </label>
+          <button type="submit" class="button">
             Подписаться
             <svg class="icon-subscribe">
               <use href="./images/symbol-defs-2.svg#icon-subscribe"></use>
             </svg>
           </button>
-        </div>
+        </form>
       </div>
       <div class="copyright">
         <p class="copyright-text">2020&#10072;Developed by GoIT students</p>
