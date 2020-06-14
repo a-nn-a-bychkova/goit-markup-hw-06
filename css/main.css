@@ -1,0 +1,281 @@
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --primary-white-color: #ffffff;
+  --footer-background: #2f303a;
+  --accent-color-pictures: rgba(33, 150, 243, 0.9);
+}
+
+/*герой*/
+
+.hero {
+  max-width: 1600px;
+  min-height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding: 200px 372px;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: var(--footer-background);
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.8),
+      rgba(47, 48, 58, 0.8)
+    ),
+    url('../images/index-images/header-image.jpg');
+}
+
+.hero-title {
+  margin-bottom: 30px;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  color: var(--primary-white-color);
+  letter-spacing: 0.06em;
+}
+
+.hero .button {
+  width: 200px;
+  height: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+  letter-spacing: 0.06em;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+/*advantages*/
+.advantages {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.advantages .item {
+  display: block;
+  padding: 0;
+  max-width: 270px;
+}
+
+.advantages .item + .item {
+  margin-left: 30px;
+}
+
+.advantages .link {
+  display: block;
+  margin-bottom: 30px;
+}
+
+.advantages-rectangle {
+  display: inline-block;
+  padding: 25px 100px;
+  width: 270px;
+  height: 120px;
+  background: #f5f4fa;
+  border-radius: 4px;
+}
+
+.advantages-rectangle .icon {
+  width: 70px;
+  height: 70px;
+}
+
+.advantages .advatage-title {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+}
+
+.advantages .text {
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  line-height: 2;
+}
+
+/*what.we.do*/
+
+.what-we-do {
+  border-top: 1px solid #ececec;
+}
+
+.what-we-do-container {
+  display: block;
+}
+
+.what-we-do-container .title {
+  margin-bottom: 50px;
+}
+
+.applications {
+  display: flex;
+}
+
+.app-image {
+  display: block;
+  border-radius: none;
+}
+
+.applications-card {
+  position: relative;
+}
+
+.applications-card .link {
+  display: block;
+}
+
+.applications > .item {
+}
+
+.applications .item + .item {
+  margin-left: 30px;
+}
+
+.applications .applications-type {
+  padding-top: 27px;
+  padding-bottom: 27px;
+
+  width: 100%;
+  height: 70px;
+
+  position: absolute;
+
+  bottom: 0;
+  left: 0;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+
+  text-align: center;
+
+  color: var(--primary-white-color);
+  background-color: rgba(47, 48, 58, 0.8);
+  border-radius: 0px 0px 4px 4px;
+}
+
+/*our-team*/
+
+.team-section {
+  background: #f5f4fa;
+}
+
+.our-team-container {
+  display: block;
+}
+
+.our-team-container .title {
+  margin-bottom: 50px;
+}
+
+.members {
+  display: flex;
+}
+
+.members-card {
+  display: block;
+  max-width: 270px;
+  padding-bottom: 24px;
+
+  background-color: var(--primary-white-color);
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+
+.members .members-card + .members-card {
+  margin-left: 30px;
+}
+
+.members-picture {
+  display: block;
+  margin-bottom: 30px;
+}
+
+.members-name,
+.members-profession {
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+.members-name {
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.members-profession {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.social-media__link {
+  display: block;
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.social-medial__link--light {
+  fill: #afb1b8;
+  background-color: var(--primary-white-color);
+}
+
+.social-media__link:hover {
+  fill: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+
+.social-links__icon + .social-links__icon {
+  margin-left: 10px;
+}
+
+/*our-clients*/
+
+.our-clients-container {
+  display: block;
+}
+
+.our-clients-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.clients__list {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.clients__link {
+  display: flex;
+  justify-content: center;
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  fill: #afb1b8;
+}
+
+.clients__link:hover {
+  border: 1px solid var(--accent-color);
+  fill: var(--accent-color);
+}
+
+.clients__item + .clients__item {
+  margin-left: 30px;
+}
+
+.clients__logo {
+  fill: inherit;
+}
