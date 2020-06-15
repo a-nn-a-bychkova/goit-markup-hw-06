@@ -515,6 +515,7 @@
         </div>
       </section>
     </main>
+
   <!--футер-->
   <footer class="footer-section section">
     <div class="footer-container container">
@@ -567,15 +568,17 @@
         <b class="subscribe-title upper">
           Подпишитесь на рассылку
         </b>
-        <label>
-        <input type="email" name="mail" class="footer__input" placeholder="E-mail" />
-  </label>
-        <button type="submit" class="button">
-          Подписаться
-          <svg class="icon-subscribe">
-            <use href="./images/symbol-defs-2.svg#icon-subscribe"></use>
-          </svg>
-        </button>
+      <div class="subscribe__container">
+          <label class="subscribe__label">
+            <input type="email" name="mail" class="footer__input" placeholder="E-mail" />
+          </label>
+          <button type="submit" class="button">
+            Подписаться
+            <svg class="icon-subscribe">
+              <use href="./images/symbol-defs-2.svg#icon-subscribe"></use>
+            </svg>
+          </button>
+      </div>
         </form>
       
     </div>
@@ -596,18 +599,18 @@
           <label for="name" class="form__label">Имя</label>
         </div>
         <div class="form__field">
-          <input type="tel" name="telephone" class="form__input" id="name" placeholder=" " />
+          <input type="tel" name="telephone" class="form__input" id="phone" placeholder=" " />
           <svg class="form__icon">
             <use href="./images/symbol-defs-2.svg#icon-phone-modal"></use>
           </svg>
-          <label for="name" class="form__label">Телефон</label>
+          <label for="phone" class="form__label">Телефон</label>
         </div>
         <div class="form__field">
-          <input type="email" name="mail" class="form__input" id="name" placeholder=" " />
+          <input type="email" name="mail" class="form__input" id="email" placeholder=" " />
           <svg class="form__icon">
             <use href="./images/symbol-defs-2.svg#icon-envelope-black"></use>
           </svg>
-          <label for="name" class="form__label">Почта</label>
+          <label for="email" class="form__label">Почта</label>
         </div>
         <div class="form__field">
           <textarea name="comment" id="comment" rows="6" class="comment-textarea"></textarea>
@@ -624,7 +627,7 @@
         </div>
     
         <button class="button" type="submit">Отправить</button>
-        <button class="form__close" data-modal-close></button>
+        <button class="form__close" type="button" data-modal-close></button>
       </form>
     </div>
     <script src="./js/modal.js"></script>

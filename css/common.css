@@ -151,6 +151,7 @@ p {
 }
 
 .nav-container__logo {
+  white-space: nowrap;
   margin-right: 85px;
   color: var(--accent-color);
   font-family: Raleway, sans-serif;
@@ -374,9 +375,19 @@ p {
   max-width: 570px;
 }
 
+.subscribe__container {
+  display: flex;
+  align-items: center;
+}
+
 .subscribe-title {
   display: block;
   margin-bottom: 21px;
+}
+
+.subscribe__label {
+  display: inline-block;
+  margin-right: 12px;
 }
 
 .icon-subscribe {
@@ -422,6 +433,7 @@ p {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
+  cursor: pointer;
 }
 
 .copyright {

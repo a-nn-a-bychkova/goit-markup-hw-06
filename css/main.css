@@ -346,7 +346,7 @@
   display: block;
   width: 100%;
   height: 40px;
-
+  padding-left: 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
@@ -355,7 +355,6 @@
 .form__input:focus {
   border: 1px solid var(--accent-color);
   outline: none;
-  padding-left: 42px;
 }
 
 .form__icon {
@@ -387,7 +386,8 @@
   line-height: 1.14;
 }
 
-.form__input:focus ~ .form__label {
+.form__input:focus ~ .form__label,
+.form__input:not(:placeholder-shown) ~ .form__label {
   transform: translateX(-24px) translateY(-250%);
   color: var(--accent-color);
 }
@@ -443,8 +443,13 @@
   height: 15px;
 
   margin-right: 8px;
+
   border: 1px solid var(--title-text-color);
   background-color: var(--primary-white-color);
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
   transition-duration: 250ms;
   transition-timing-function: var(--timing-function);
 }
